@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Кабачки Брюгге</title>
+  </head>
+  <body>
+    <script>
+      let userNum = parseInt(
+        prompt(
+          "Введите номер кабачка чтобы посмотреть характеристику про него: \n1) Алёна\n2) Миша\n3) Олег\n"
+        )
+      );
+      let result;
+      switch (userNum) {
+        case 1:
+          result = `
+  				<img class="alena" src="img/img1.jpg"/>
+					<h1>Позывной Помойка Усатая</h1>
+
+					<h3>Основная характеристика:</h3>
+					<ul>
+						<li>УСЫ</li>
+						<li>Падкая на бабки</li>
+						<li>Режет столы</li>
+						<li>Любит кабачков</li>
+						<li>Валилась с Мишей</li>
+						<li>Любимое фраза - СЕБЕ ПОМОГИ или СЕЙЧАС ТЫ НА ОЗЕРО ПОЙДЕШЬ РАБОТАТЬ</li>
+					</ul>
+					`;
+          break;
+        case 2:
+          result = `
+					<img class="oleg" src="img/misha.jpg" />
+					<h1>Мишель Иванович, он же Мишаня, он же Баламут</h1>
+					<h3>Основная характеристика:</h3>
+					<ul>
+						<li>Мутит воду</li>
+						<li>Каждый месяц съезжает</li>
+						<li>Жить не может без покера</li>
+						<li>Любит баловать Таню</li>
+					</ul>
+					<h3>Особенность:</h3>
+					<ul>
+						<li>Ебал Никитишну</li>
+					</ul>
+					`;
+          break;
+        case 3:
+          result = `
+						<img class="oleg" src="img/img2.jpg" alt="" />
+						<img
+							class="pchela"
+							src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Drone_49a.jpg/1200px-Drone_49a.jpg"
+							alt=""
+						/>
+						<h1>Позывной Рудик</h1>
+						<h3>Основная характеристика:</h3>
+						<ul>
+							<li>Очень любит кушать мед</li>
+						</ul>
+						<h3>Любимые фразы</h3>
+						<ul>
+							<li>Нажаль</li>
+							<li>Останній раз на дивані сиділи</li>
+							<li>Хоть когда-то</li>
+						</ul>
+						`;
+        default:
+          break;
+      }
+      document.write(result);
+    </script>
+  </body>
+</html>
